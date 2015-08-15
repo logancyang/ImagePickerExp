@@ -13,10 +13,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var imagePicker: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
 
-    
+    @IBOutlet weak var topTextfield: UITextField!
+    @IBOutlet weak var bottomTextfield: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // setup top textfield
+        topTextfield.text = "TOP"
+        topTextfield.textAlignment = NSTextAlignment.Center
+        // setup bottom textfield
+        bottomTextfield.text = "BOTTOM"
+        bottomTextfield.textAlignment = NSTextAlignment.Center
     }
     
     override func viewWillAppear(animated: Bool) {
